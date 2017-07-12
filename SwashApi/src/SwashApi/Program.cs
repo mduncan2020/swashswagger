@@ -19,6 +19,8 @@ namespace SwashApi
                 .UseStartup<Startup>()
                 .Build();
 
+
+
             host.Run();
         }
     }

@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 
 namespace SwashApi
 {
+    using Swashbuckle.AspNetCore.Swagger;
+
     public class Startup
     {
         public Startup(IHostingEnvironment env)
@@ -26,7 +28,9 @@ namespace SwashApi
             }
 
             builder.AddEnvironmentVariables();
-            Configuration = builder.Build();
+            this.Configuration = builder.Build();
+
+            
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -38,6 +42,11 @@ namespace SwashApi
             //services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -51,6 +60,8 @@ namespace SwashApi
             //app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseMvc();
+
+            app.UseSwagger();
         }
     }
 }
