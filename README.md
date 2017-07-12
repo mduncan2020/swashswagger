@@ -1,2 +1,2 @@
 # swashswagger
-.NET Web Api with Swagger docs from Swashbucke
+.NET Web Api with Swagger docs from Swashbuckle
