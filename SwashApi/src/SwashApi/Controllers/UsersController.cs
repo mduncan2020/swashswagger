@@ -44,9 +44,9 @@ namespace SwashApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Creates a new User
         /// </summary>
-        /// <param name="userData"></param>
+        /// <param name="userData">JSON representation of a User</param>
         /// <example>POST api/users</example>
         [HttpPost]
         public void Post([FromBody]User userData)
@@ -54,10 +54,10 @@ namespace SwashApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Updates the existing user record
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="userData"></param>
+        /// <param name="id">Id of the user record to update</param>
+        /// <param name="userData">JSON representation of a User</param>
         /// <example>PUT api/users/79A0C53F-8131-4E7C-8BA8-AD4D8659FED7</example>
         [HttpPut("{id}")]
         public void Put(Guid id, [FromBody]User userData)
@@ -65,9 +65,9 @@ namespace SwashApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Deletes the record of the user with the supplied id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of the record to delete</param>
         /// <example>DELETE api/users/5</example>
         [HttpDelete("{id}")]
         public void Delete(Guid id)

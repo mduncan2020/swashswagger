@@ -26,24 +26,24 @@
         </member>
         <member name="M:SwashApi.Controllers.UsersController.Post(SwashApi.Model.User)">
             <summary>
-            
+            Creates a new User
             </summary>
-            <param name="userData"></param>
+            <param name="userData">JSON representation of a User</param>
             <example>POST api/users</example>
         </member>
         <member name="M:SwashApi.Controllers.UsersController.Put(System.Guid,SwashApi.Model.User)">
             <summary>
-            
+            Updates the existing user record
             </summary>
-            <param name="id"></param>
-            <param name="userData"></param>
+            <param name="id">Id of the user record to update</param>
+            <param name="userData">JSON representation of a User</param>
             <example>PUT api/users/79A0C53F-8131-4E7C-8BA8-AD4D8659FED7</example>
         </member>
         <member name="M:SwashApi.Controllers.UsersController.Delete(System.Guid)">
             <summary>
-            
+            Deletes the urecord of the user with the supplied id
             </summary>
-            <param name="id"></param>
+            <param name="id">Id of the record to delete</param>
             <example>DELETE api/users/5</example>
         </member>
         <member name="T:SwashApi.Controllers.ValuesController">
