@@ -9,6 +9,7 @@
 --platform:x64
 --optimize:False
 --emit-entry-point:True
+--generate-xml-documentation:True
 --output-name:SwashApi
 --file-version:1.0.0.0
 --version:1.0.0.0
@@ -149,4 +150,6 @@
 --resource:"C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\obj\Debug\net46\SwashApidotnet-compile.deps.json",SwashApi.deps.json
 C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Program.cs
 C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Startup.cs
+C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Controllers\UsersController.cs
 C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Controllers\ValuesController.cs
+C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Model\user.cs

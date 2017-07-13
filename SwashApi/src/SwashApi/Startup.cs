@@ -45,7 +45,8 @@ namespace SwashApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Swash API", Version = "v1" });
+                c.IncludeXmlComments(string.Format(@"{0}\SwashApi.xml", System.AppDomain.CurrentDomain.BaseDirectory)); // need to check 'Xml documentation file' in project build properties 
             });
         }
 
@@ -59,9 +60,10 @@ namespace SwashApi
 
             //app.UseApplicationInsightsExceptionTelemetry();
 
-            app.UseMvc();
+            app.UseSwagger(); // need this, generates the swagger.json file
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swash API Docs V1");}); // shows swagger ui
 
-            app.UseSwagger();
+            app.UseMvc();
         }
     }
 }

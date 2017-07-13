@@ -5,6 +5,7 @@
 -nowarn:CS1702
 -nowarn:CS1705
 -platform:x64
+-doc:"C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\bin\Debug\net46\SwashApi.xml"
 -debug:full
 -nostdlib
 -nologo
@@ -145,4 +146,6 @@
 -resource:"C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\obj\Debug\net46\SwashApidotnet-compile.deps.json",SwashApi.deps.json
 "C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Program.cs"
 "C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Startup.cs"
+"C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Controllers\UsersController.cs"
 "C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Controllers\ValuesController.cs"
+"C:\BitBucket\SourceTree\swashswagger\swashswagger\SwashApi\src\SwashApi\Model\user.cs"
